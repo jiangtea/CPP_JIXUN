@@ -6,13 +6,12 @@ int main() {
    string line;
    while (getline(cin, line)) {
       stringstream ss(line);
-      string data;
-      int i = 0;
+      int n = 0;
+      char c;
       double d = 0;
       double sum = 0;
-      while (ss >> data) {
-         sscanf(data.c_str(), "%d:%lf", &i, &d);
-         if (i % 2 == 1) {
+      while (ss >> n >> c >> d) { //讀取 1:3.02
+         if (n % 2 == 1) {
             sum += d;
          } else {
             sum -= d;
