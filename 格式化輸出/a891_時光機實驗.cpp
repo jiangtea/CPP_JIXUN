@@ -8,7 +8,7 @@ int months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 int toSec(int M, int d, int h, int m, int s) {
 	--M, --d;
 
-	for (int i = 0; i < m; ++i)
+	for (int i = 0; i < M; ++i)
 		d += months[i];
 	return d * 24 * 3600 + h * 3600 + m * 60 + s;
 }
@@ -27,7 +27,8 @@ int main() {
 	int n;
 	cin >> n;
 	while (n--) {
-		int M1, d1, h1, m1, s1, M2, d2, h2, m2, s2;
+		int M1 = 0, d1 = 0, h1 = 0, m1 = 0, s1 = 0, M2 = 0, d2 = 0, h2 = 0, m2 =
+				0, s2 = 0;
 		scanf("%d-%d %d:%d:%d, %d-%d %d:%d:%d", &M1, &d1, &h1, &m1, &s1, &M2,
 				&d2, &h2, &m2, &s2);
 		int sec1 = toSec(M1, d1, h1, m1, s1);
