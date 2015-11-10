@@ -10,6 +10,7 @@ int main() {
       //while (cin >> n) {
       count++;
    }
+
    cout << "count=" << count << endl;
 
    cout << "time: " << (double) clock() / CLOCKS_PER_SEC << "s" << endl;
