@@ -49,8 +49,13 @@ int main() {
    char hello[100] = "hello";
    sprintf(s, "Say %s to %d person.", hello, 5);
    cout << s << endl;
+   string sint = "1234";
 
-   cout << hex << 10 << "!!" << endl;  // 16進位
+   cout << "stoi(string to int)=" << stoi(sint) << endl;
+   string sfloat = "123.4";
+   cout << "stoi(string to float)=" << stof(sfloat) << endl;
+
+   //cout << hex << 10 << "!!" << endl;  // 16進位
 
 //   string weight;
 //   char c;

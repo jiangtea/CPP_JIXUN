@@ -11,7 +11,7 @@ int main() {
       int count = 0;
       while (n > 1) {
          if (n % 2 == 1) {
-            n = n * 3 + 1;
+            n = n * 3 + 1; // 變數在此會可能會爆炸。
          } else {
             n /= 2;
          }
